@@ -115,7 +115,7 @@ section {
     }
 }
 
-input[type=text] {
+input[type=text],input[type=password] {   /* Example of grouping*/
   width: 40%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -130,18 +130,6 @@ input[type=text] {
 .bottom {
     position: fixed;
     bottom: 0;
-}
-
-input[type=password] {
-  width: 40%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 2px solid red;
-  border-radius: 10px;
-  font-size: 14px;
-  background-color: black;
-  color: lightgreen;
 }
 
 input[type=text]:focus{
