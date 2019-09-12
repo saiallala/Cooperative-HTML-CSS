@@ -4,15 +4,129 @@
     <title> Welcome to Sai's Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="CSS/StyleSheet.css" rel="stylesheet" type="text/css">
+    <link href="CSS/modalstyle.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
-    <p align="right"><a href="login.html" target="">Login</a></p>
-    <p align="right"><a href="#" class="notification">
-            <span>Inbox</span>
-            <span class="badge"></span>
-        </a></p>
 
+    <button id="signUp">Sign In</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="index.html" style="border:1px solid #ccc">
+                <div class="container">
+                    <h1>Sign Up</h1>
+                    <p>Please fill in this form to create an account.</p>
+
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" placeholder="Enter username" name="user" required>
+
+                    <label for="password"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="password" required>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+
+                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                    <div class="clearfix">
+                        <button type="button" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signUpbtn">Sign Up</button>
+
+                        <button id="signUp">Sign In</button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <form action="index.html" style="border:1px solid #ccc">
+                                    <div class="container">
+                                        <h1>Sign Up</h1>
+                                        <p>Please fill in this form to create an account.</p>
+
+                                        <label for="username"><b>Username</b></label>
+                                        <input type="text" placeholder="Enter username" name="user" required>
+
+                                        <label for="password"><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="password" required>
+
+                                        <label for="repeat-password"><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="repeat-password" required>
+
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                                        </label>
+
+                                        <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                                        <div class="clearfix">
+                                            <button type="button" class="cancelbtn">Cancel</button>
+                                        </div>
+                                        <script>
+                                            // Get the modal
+                                            var modal = document.getElementById("myModal");
+
+                                            // Get the button that opens the modal
+                                            var btn = document.getElementById("signUp");
+
+                                            // Get the <span> element that closes the modal
+                                            var span = document.getElementsByClassName("close")[0];
+
+                                            // When the user clicks the button, open the modal
+                                            btn.onclick = function() {
+                                                modal.style.display = "block";
+                                            }
+
+                                            // When the user clicks on <span> (x), close the modal
+                                            span.onclick = function() {
+                                                modal.style.display = "none";
+                                            }
+
+                                            // When the user clicks anywhere outside of the modal, close it
+                                            window.onclick = function(event) {
+                                                if (event.target == modal) {
+                                                    modal.style.display = "none";
+                                                }
+                                            }
+                                        </script>
+                                    </div>
+                            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("signUp");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
     <header>
         <center>
             <h1> Welcome to CO-OP</h1>
@@ -31,13 +145,16 @@
 
     <h3><a href="" target="iframe_Chris">Project 1</a></h3>
     <p style="font-family:georgia, garamond, serif;font-size:18px;font-style:italic;"> Only a wanderer of the world may create this evolution of awareness. Without flow, one cannot believe. You must take a stand against discontinuity.
-        Throughout history, humans have been interacting with the grid via psionic wave oscillations. We are in the midst of an endless deepening of inspiration that will be a gateway to the quantum matrix itself. Humankind has nothing to lose.
+        Throughout history, humans have been interacting with the grid via psionic wave oscillations. We are in the midst of an endless deepening of inspiration that will be a gateway to the quantum matrix itself. Humankind has nothing to
+        lose.
         The future will be an archetypal unveiling of gratitude. The Goddess will give us access to astral chi. Soon there will be a deepening of transformation the likes of which the galaxy has never seen.
     </p>
     <h3>Project 2</h3>
-    <p style="font-family:georgia, garamond, serif;font-size:18px;font-style:italic;"> The planet is approaching a tipping point. It is in maturing that we are re-energized. Eons from now, we travellers will heal like never before as we are guided by
+    <p style="font-family:georgia, garamond, serif;font-size:18px;font-style:italic;"> The planet is approaching a tipping point. It is in maturing that we are re-energized. Eons from now, we travellers will heal like never before as we are
+        guided by
         the planet.
-        We are in the midst of an enlightened invocation of curiosity that will clear a path toward the solar system itself. Humankind has nothing to lose. Reality has always been bursting with messengers whose chakras are engulfed in wellbeing.
+        We are in the midst of an enlightened invocation of curiosity that will clear a path toward the solar system itself. Humankind has nothing to lose. Reality has always been bursting with messengers whose chakras are engulfed in
+        wellbeing.
         It can be difficult to know where to begin. Have you found your path? If you have never experienced this wellspring at the speed of light, it can be difficult to believe.</p>
     <h3>Project 3</h3>
     <p style="font-family:georgia, garamond, serif;font-size:18px;font-style:italic;">This life is nothing short of a redefining paradigm shift of unlimited purpose. Joy is a constant. The quantum matrix is beaming with molecular structures.
@@ -45,10 +162,14 @@
         Today, science tells us that the essence of nature is karma. Consciousness consists of morphogenetic fields of quantum energy. “Quantum” means a refining of the psychic. We grow, we reflect, we are reborn.
     </p>
     <h3>Project 4</h3>
-    <p style="font-family:georgia, garamond, serif;font-size:18px;font-style:italic;">You may be ruled by illusion without realizing it. Do not let it shatter the nature of your story. Yes, it is possible to confront the things that can disrupt us,
+    <p style="font-family:georgia, garamond, serif;font-size:18px;font-style:italic;" id="project">You may be ruled by illusion without realizing it. Do not let it shatter the nature of your story. Yes, it is possible to confront the things
+        that can disrupt us,
         but not without conscious living on our side. Only a lifeform of the quantum cycle may ignite this wellspring of chi.
         The complexity of the present time seems to demand a summoning of our souls if we are going to survive. Where there is materialism, coherence cannot thrive. Delusion is born in the gap where choice has been excluded.
         We heal, we believe, we are reborn. Insight requires exploration. Spacetime is a constant.</p>
+    <script>
+        string.search(searchvalue);
+    </script>
 </body>
 <footer>
     <hr />
